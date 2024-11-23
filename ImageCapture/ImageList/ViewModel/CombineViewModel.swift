@@ -14,9 +14,8 @@ class CombineViewModel: ObservableObject {
     let legacyUploader = LegacyImageUpload()
     let sevice = CombineDataService()
     
-    
-    func uploadImage() {
-        let uploadTicket = objectsToUpload
+    func uploadImageToServer() {
+        let _ = objectsToUpload
             .flatMap({
                 self.legacyUploader.upload($0)
                     .flatMap { self.sevice.upload($0) }

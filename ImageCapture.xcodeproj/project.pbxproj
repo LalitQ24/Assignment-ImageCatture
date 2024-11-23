@@ -223,8 +223,8 @@
 		418AF2C72CF1C65900B007CE /* ImageList */ = {
 			isa = PBXGroup;
 			children = (
-				418AF2CA2CF1C68900B007CE /* View */,
 				418AF2C82CF1C66100B007CE /* Model */,
+				418AF2CA2CF1C68900B007CE /* View */,
 				418AF2C92CF1C66E00B007CE /* ViewModel */,
 			);
 			path = ImageList;

@@ -30,13 +30,13 @@ struct ImageListData: View {
                                     Button {
                                         let data = image.jpegData(compressionQuality: 1.0)
                                         if let data = data {
-                                            let object = ObjectWithImage.init(id: UUID(), name: imageData.imageName ?? "" , imageData: data,imageURL: "")
+                                            let object = ObjectWithImage.init(id: UUID(), name: imageData.imageName ?? "" , imageData: data,imageCatureDate: imageData.imageCaptureDate ?? Date())
                                             Publishers.uploadObjectQueue.send(object)
-                                            combineViewModel.uploadImage()
+                                            combineViewModel.uploadImageToServer()
                                         }
                                         
                                     } label: {
-                                        Text("Upload ")
+                                        Text("Upload")
                                             .foregroundStyle(.red)
                                     }
                                 })

@@ -12,13 +12,13 @@ struct ObjectWithImage: Encodable {
     let id: UUID
     let name: String
     let imageData: Data
-    let imageURL: String
+    let imageCatureDate: Date
     
     enum CodingKeys: CodingKey {
         case id
         case name
         case imageData
-        case imageURL
+        case imageCatureDate
     }
 }
 
