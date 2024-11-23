@@ -20,6 +20,8 @@
 		418AF2A82CF0F5DB00B007CE /* ImageCaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF29D2CF0F5DB00B007CE /* ImageCaptureApp.swift */; };
 		418AF2A92CF0F5DB00B007CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418AF2942CF0F5DB00B007CE /* Preview Assets.xcassets */; };
 		418AF2AA2CF0F5DB00B007CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418AF29C2CF0F5DB00B007CE /* Assets.xcassets */; };
+		418AF2B22CF1C10C00B007CE /* LegacyImageUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF2B12CF1C10B00B007CE /* LegacyImageUpload.swift */; };
+		418AF2C62CF1C62D00B007CE /* ObjectWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF2C52CF1C62C00B007CE /* ObjectWithImage.swift */; };
 		A372FB82B9C46005548EF5E3 /* Pods_ImageCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC31EB675BF65A4CEEB8224 /* Pods_ImageCaptureTests.framework */; };
 		C44551C17245EDB667A4DF51 /* Pods_ImageCapture_ImageCaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ABFC9795D073B7ACBC041A /* Pods_ImageCapture_ImageCaptureUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		418AF29A2CF0F5DB00B007CE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		418AF29C2CF0F5DB00B007CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418AF29D2CF0F5DB00B007CE /* ImageCaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptureApp.swift; sourceTree = "<group>"; };
+		418AF2B12CF1C10B00B007CE /* LegacyImageUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyImageUpload.swift; sourceTree = "<group>"; };
+		418AF2C52CF1C62C00B007CE /* ObjectWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectWithImage.swift; sourceTree = "<group>"; };
 		5F825483034CEA68B87E863E /* Pods_ImageCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68ABFC9795D073B7ACBC041A /* Pods_ImageCapture_ImageCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCapture_ImageCaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC31EB675BF65A4CEEB8224 /* Pods_ImageCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				418AF28E2CF0F5DB00B007CE /* ContentView.swift */,
-				418AF28F2CF0F5DB00B007CE /* ImageListData.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,7 +165,6 @@
 		418AF2932CF0F5DB00B007CE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				418AF2912CF0F5DB00B007CE /* CombineViewModel.swift */,
 				418AF2922CF0F5DB00B007CE /* ImageViewModel.swift */,
 			);
 			path = ViewModel;
@@ -175,7 +177,6 @@
 				418AF2902CF0F5DB00B007CE /* View */,
 				418AF2932CF0F5DB00B007CE /* ViewModel */,
 				418AF2942CF0F5DB00B007CE /* Preview Assets.xcassets */,
-				418AF2972CF0F5DB00B007CE /* Constatnt */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -192,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				418AF2982CF0F5DB00B007CE /* CombineDataService.swift */,
+				418AF2B12CF1C10B00B007CE /* LegacyImageUpload.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,12 +210,48 @@
 			isa = PBXGroup;
 			children = (
 				418AF2952CF0F5DB00B007CE /* Preview Content */,
+				418AF2C72CF1C65900B007CE /* ImageList */,
+				418AF2972CF0F5DB00B007CE /* Constatnt */,
 				418AF2992CF0F5DB00B007CE /* Services */,
 				418AF29B2CF0F5DB00B007CE /* ViewRepresntable */,
 				418AF29C2CF0F5DB00B007CE /* Assets.xcassets */,
 				418AF29D2CF0F5DB00B007CE /* ImageCaptureApp.swift */,
 			);
 			path = ImageCapture;
+			sourceTree = "<group>";
+		};
+		418AF2C72CF1C65900B007CE /* ImageList */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2CA2CF1C68900B007CE /* View */,
+				418AF2C82CF1C66100B007CE /* Model */,
+				418AF2C92CF1C66E00B007CE /* ViewModel */,
+			);
+			path = ImageList;
+			sourceTree = "<group>";
+		};
+		418AF2C82CF1C66100B007CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2C52CF1C62C00B007CE /* ObjectWithImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		418AF2C92CF1C66E00B007CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2912CF0F5DB00B007CE /* CombineViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		418AF2CA2CF1C68900B007CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				418AF28F2CF0F5DB00B007CE /* ImageListData.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F12EF16003D21481B9851307 /* Pods */ = {
@@ -474,11 +512,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				418AF2B22CF1C10C00B007CE /* LegacyImageUpload.swift in Sources */,
 				418AF29F2CF0F5DB00B007CE /* ImageModel.swift in Sources */,
 				418AF2A02CF0F5DB00B007CE /* ImageRealmObject.swift in Sources */,
 				418AF2A12CF0F5DB00B007CE /* ContentView.swift in Sources */,
 				418AF2A22CF0F5DB00B007CE /* ImageListData.swift in Sources */,
 				418AF2A32CF0F5DB00B007CE /* CombineViewModel.swift in Sources */,
+				418AF2C62CF1C62D00B007CE /* ObjectWithImage.swift in Sources */,
 				418AF2A42CF0F5DB00B007CE /* ImageViewModel.swift in Sources */,
 				418AF2A52CF0F5DB00B007CE /* ImageHelper.swift in Sources */,
 				418AF2A62CF0F5DB00B007CE /* CombineDataService.swift in Sources */,
@@ -653,6 +693,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -683,6 +724,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

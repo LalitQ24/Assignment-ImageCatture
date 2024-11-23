@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ImageModel: Identifiable {
     var id: String?
@@ -18,9 +19,4 @@ struct ImageModel: Identifiable {
         self.imagePath = imageRealmObject.imagePath
         self.imageCaptureDate = imageRealmObject.imageCaptureDate
     }
-}
-
-struct UploadDataModel: Identifiable {
-    var id: String?
-    var isUpload: Bool?
 }

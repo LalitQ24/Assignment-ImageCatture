@@ -7,8 +7,11 @@
 
 import SwiftUI
 import RealmSwift
+import Combine
+
 struct ImageListData: View {
     @ObservedObject var viewModel: ImageViewModel
+    @ObservedObject var combineViewModel = CombineViewModel()
     var body: some View {
         List {
             ForEach(viewModel.imageListData, id: \.id) {
@@ -25,6 +28,13 @@ struct ImageListData: View {
                             ZStack {
                                 VStack(alignment: .trailing, content: {
                                     Button {
+                                        let data = image.jpegData(compressionQuality: 1.0)
+                                        if let data = data {
+                                            let object = ObjectWithImage.init(id: UUID(), name: imageData.imageName ?? "" , imageData: data,imageURL: "")
+                                            Publishers.uploadObjectQueue.send(object)
+                                            combineViewModel.uploadImage()
+                                        }
+                                        
                                     } label: {
                                         Text("Upload ")
                                             .foregroundStyle(.red)
@@ -33,16 +43,10 @@ struct ImageListData: View {
                                 .background(.white)
                                 .frame(maxWidth: .infinity,idealHeight: 40, alignment: .trailing)
                                 .padding(.trailing, 20)
-                               
-                            }
-                            
-//
-                        )
+                                
+                            })
                 }
             }
-        }
-        .onAppear() {
-            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
