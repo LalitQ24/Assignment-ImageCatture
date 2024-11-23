@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		148C3584155412C47B05CFD8 /* Pods_ImageCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F825483034CEA68B87E863E /* Pods_ImageCapture.framework */; };
+		418AF29F2CF0F5DB00B007CE /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF28B2CF0F5DB00B007CE /* ImageModel.swift */; };
+		418AF2A02CF0F5DB00B007CE /* ImageRealmObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF28C2CF0F5DB00B007CE /* ImageRealmObject.swift */; };
+		418AF2A12CF0F5DB00B007CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF28E2CF0F5DB00B007CE /* ContentView.swift */; };
+		418AF2A22CF0F5DB00B007CE /* ImageListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF28F2CF0F5DB00B007CE /* ImageListData.swift */; };
+		418AF2A32CF0F5DB00B007CE /* CombineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF2912CF0F5DB00B007CE /* CombineViewModel.swift */; };
+		418AF2A42CF0F5DB00B007CE /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF2922CF0F5DB00B007CE /* ImageViewModel.swift */; };
+		418AF2A52CF0F5DB00B007CE /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF2962CF0F5DB00B007CE /* ImageHelper.swift */; };
+		418AF2A62CF0F5DB00B007CE /* CombineDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF2982CF0F5DB00B007CE /* CombineDataService.swift */; };
+		418AF2A72CF0F5DB00B007CE /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF29A2CF0F5DB00B007CE /* ImagePicker.swift */; };
+		418AF2A82CF0F5DB00B007CE /* ImageCaptureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AF29D2CF0F5DB00B007CE /* ImageCaptureApp.swift */; };
+		418AF2A92CF0F5DB00B007CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418AF2942CF0F5DB00B007CE /* Preview Assets.xcassets */; };
+		418AF2AA2CF0F5DB00B007CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418AF29C2CF0F5DB00B007CE /* Assets.xcassets */; };
+		A372FB82B9C46005548EF5E3 /* Pods_ImageCaptureTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC31EB675BF65A4CEEB8224 /* Pods_ImageCaptureTests.framework */; };
+		C44551C17245EDB667A4DF51 /* Pods_ImageCapture_ImageCaptureUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68ABFC9795D073B7ACBC041A /* Pods_ImageCapture_ImageCaptureUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4142D18F2CF07FF400DC8ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4142D1762CF07FF200DC8ED3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4142D17D2CF07FF200DC8ED3;
+			remoteInfo = ImageCapture;
+		};
+		4142D1992CF07FF400DC8ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4142D1762CF07FF200DC8ED3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4142D17D2CF07FF200DC8ED3;
+			remoteInfo = ImageCapture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DA1E08B8750F1E77E977DAD /* Pods-ImageCapture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCapture.release.xcconfig"; path = "Target Support Files/Pods-ImageCapture/Pods-ImageCapture.release.xcconfig"; sourceTree = "<group>"; };
+		4142D17E2CF07FF200DC8ED3 /* ImageCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4142D18E2CF07FF400DC8ED3 /* ImageCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4142D1982CF07FF400DC8ED3 /* ImageCaptureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageCaptureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418AF28B2CF0F5DB00B007CE /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		418AF28C2CF0F5DB00B007CE /* ImageRealmObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRealmObject.swift; sourceTree = "<group>"; };
+		418AF28E2CF0F5DB00B007CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		418AF28F2CF0F5DB00B007CE /* ImageListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListData.swift; sourceTree = "<group>"; };
+		418AF2912CF0F5DB00B007CE /* CombineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewModel.swift; sourceTree = "<group>"; };
+		418AF2922CF0F5DB00B007CE /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		418AF2942CF0F5DB00B007CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		418AF2962CF0F5DB00B007CE /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		418AF2982CF0F5DB00B007CE /* CombineDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineDataService.swift; sourceTree = "<group>"; };
+		418AF29A2CF0F5DB00B007CE /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		418AF29C2CF0F5DB00B007CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418AF29D2CF0F5DB00B007CE /* ImageCaptureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaptureApp.swift; sourceTree = "<group>"; };
+		5F825483034CEA68B87E863E /* Pods_ImageCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68ABFC9795D073B7ACBC041A /* Pods_ImageCapture_ImageCaptureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCapture_ImageCaptureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC31EB675BF65A4CEEB8224 /* Pods_ImageCaptureTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageCaptureTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ED093970DCD06684F9D575D /* Pods-ImageCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCapture.debug.xcconfig"; path = "Target Support Files/Pods-ImageCapture/Pods-ImageCapture.debug.xcconfig"; sourceTree = "<group>"; };
+		803C1D2E97D40E938FAE5C9A /* Pods-ImageCapture-ImageCaptureUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCapture-ImageCaptureUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageCapture-ImageCaptureUITests/Pods-ImageCapture-ImageCaptureUITests.release.xcconfig"; sourceTree = "<group>"; };
+		925A001F9E652661B5F70120 /* Pods-ImageCaptureTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCaptureTests.debug.xcconfig"; path = "Target Support Files/Pods-ImageCaptureTests/Pods-ImageCaptureTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BAC788BA3A36EB58150BFCF2 /* Pods-ImageCapture-ImageCaptureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCapture-ImageCaptureUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImageCapture-ImageCaptureUITests/Pods-ImageCapture-ImageCaptureUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D146FAE68994FAEFA7B91349 /* Pods-ImageCaptureTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageCaptureTests.release.xcconfig"; path = "Target Support Files/Pods-ImageCaptureTests/Pods-ImageCaptureTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4142D1912CF07FF400DC8ED3 /* ImageCaptureTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ImageCaptureTests;
+			sourceTree = "<group>";
+		};
+		4142D19B2CF07FF400DC8ED3 /* ImageCaptureUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ImageCaptureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4142D17B2CF07FF200DC8ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148C3584155412C47B05CFD8 /* Pods_ImageCapture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142D18B2CF07FF400DC8ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A372FB82B9C46005548EF5E3 /* Pods_ImageCaptureTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142D1952CF07FF400DC8ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C44551C17245EDB667A4DF51 /* Pods_ImageCapture_ImageCaptureUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C57CA74C888134937AC5B8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F825483034CEA68B87E863E /* Pods_ImageCapture.framework */,
+				68ABFC9795D073B7ACBC041A /* Pods_ImageCapture_ImageCaptureUITests.framework */,
+				7BC31EB675BF65A4CEEB8224 /* Pods_ImageCaptureTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4142D1752CF07FF200DC8ED3 = {
+			isa = PBXGroup;
+			children = (
+				418AF29E2CF0F5DB00B007CE /* ImageCapture */,
+				4142D1912CF07FF400DC8ED3 /* ImageCaptureTests */,
+				4142D19B2CF07FF400DC8ED3 /* ImageCaptureUITests */,
+				4142D17F2CF07FF200DC8ED3 /* Products */,
+				F12EF16003D21481B9851307 /* Pods */,
+				1C57CA74C888134937AC5B8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4142D17F2CF07FF200DC8ED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4142D17E2CF07FF200DC8ED3 /* ImageCapture.app */,
+				4142D18E2CF07FF400DC8ED3 /* ImageCaptureTests.xctest */,
+				4142D1982CF07FF400DC8ED3 /* ImageCaptureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418AF28D2CF0F5DB00B007CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				418AF28B2CF0F5DB00B007CE /* ImageModel.swift */,
+				418AF28C2CF0F5DB00B007CE /* ImageRealmObject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		418AF2902CF0F5DB00B007CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				418AF28E2CF0F5DB00B007CE /* ContentView.swift */,
+				418AF28F2CF0F5DB00B007CE /* ImageListData.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		418AF2932CF0F5DB00B007CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2912CF0F5DB00B007CE /* CombineViewModel.swift */,
+				418AF2922CF0F5DB00B007CE /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		418AF2952CF0F5DB00B007CE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				418AF28D2CF0F5DB00B007CE /* Model */,
+				418AF2902CF0F5DB00B007CE /* View */,
+				418AF2932CF0F5DB00B007CE /* ViewModel */,
+				418AF2942CF0F5DB00B007CE /* Preview Assets.xcassets */,
+				418AF2972CF0F5DB00B007CE /* Constatnt */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		418AF2972CF0F5DB00B007CE /* Constatnt */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2962CF0F5DB00B007CE /* ImageHelper.swift */,
+			);
+			path = Constatnt;
+			sourceTree = "<group>";
+		};
+		418AF2992CF0F5DB00B007CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2982CF0F5DB00B007CE /* CombineDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		418AF29B2CF0F5DB00B007CE /* ViewRepresntable */ = {
+			isa = PBXGroup;
+			children = (
+				418AF29A2CF0F5DB00B007CE /* ImagePicker.swift */,
+			);
+			path = ViewRepresntable;
+			sourceTree = "<group>";
+		};
+		418AF29E2CF0F5DB00B007CE /* ImageCapture */ = {
+			isa = PBXGroup;
+			children = (
+				418AF2952CF0F5DB00B007CE /* Preview Content */,
+				418AF2992CF0F5DB00B007CE /* Services */,
+				418AF29B2CF0F5DB00B007CE /* ViewRepresntable */,
+				418AF29C2CF0F5DB00B007CE /* Assets.xcassets */,
+				418AF29D2CF0F5DB00B007CE /* ImageCaptureApp.swift */,
+			);
+			path = ImageCapture;
+			sourceTree = "<group>";
+		};
+		F12EF16003D21481B9851307 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ED093970DCD06684F9D575D /* Pods-ImageCapture.debug.xcconfig */,
+				3DA1E08B8750F1E77E977DAD /* Pods-ImageCapture.release.xcconfig */,
+				BAC788BA3A36EB58150BFCF2 /* Pods-ImageCapture-ImageCaptureUITests.debug.xcconfig */,
+				803C1D2E97D40E938FAE5C9A /* Pods-ImageCapture-ImageCaptureUITests.release.xcconfig */,
+				925A001F9E652661B5F70120 /* Pods-ImageCaptureTests.debug.xcconfig */,
+				D146FAE68994FAEFA7B91349 /* Pods-ImageCaptureTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4142D17D2CF07FF200DC8ED3 /* ImageCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4142D1A22CF07FF400DC8ED3 /* Build configuration list for PBXNativeTarget "ImageCapture" */;
+			buildPhases = (
+				D6BD3F5EA9C9944FB575C10C /* [CP] Check Pods Manifest.lock */,
+				4142D17A2CF07FF200DC8ED3 /* Sources */,
+				4142D17B2CF07FF200DC8ED3 /* Frameworks */,
+				4142D17C2CF07FF200DC8ED3 /* Resources */,
+				0EE96BCBC861BAE69C3EAA45 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageCapture;
+			productName = ImageCapture;
+			productReference = 4142D17E2CF07FF200DC8ED3 /* ImageCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4142D18D2CF07FF400DC8ED3 /* ImageCaptureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4142D1A52CF07FF400DC8ED3 /* Build configuration list for PBXNativeTarget "ImageCaptureTests" */;
+			buildPhases = (
+				6A0BAB7C10FE4572BF4A1D2A /* [CP] Check Pods Manifest.lock */,
+				4142D18A2CF07FF400DC8ED3 /* Sources */,
+				4142D18B2CF07FF400DC8ED3 /* Frameworks */,
+				4142D18C2CF07FF400DC8ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4142D1902CF07FF400DC8ED3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4142D1912CF07FF400DC8ED3 /* ImageCaptureTests */,
+			);
+			name = ImageCaptureTests;
+			productName = ImageCaptureTests;
+			productReference = 4142D18E2CF07FF400DC8ED3 /* ImageCaptureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4142D1972CF07FF400DC8ED3 /* ImageCaptureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4142D1A82CF07FF400DC8ED3 /* Build configuration list for PBXNativeTarget "ImageCaptureUITests" */;
+			buildPhases = (
+				A23A059A37F5EFB12D47F4A6 /* [CP] Check Pods Manifest.lock */,
+				4142D1942CF07FF400DC8ED3 /* Sources */,
+				4142D1952CF07FF400DC8ED3 /* Frameworks */,
+				4142D1962CF07FF400DC8ED3 /* Resources */,
+				D618C4299918D6457C14F7FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4142D19A2CF07FF400DC8ED3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4142D19B2CF07FF400DC8ED3 /* ImageCaptureUITests */,
+			);
+			name = ImageCaptureUITests;
+			productName = ImageCaptureUITests;
+			productReference = 4142D1982CF07FF400DC8ED3 /* ImageCaptureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4142D1762CF07FF200DC8ED3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					4142D17D2CF07FF200DC8ED3 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					4142D18D2CF07FF400DC8ED3 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4142D17D2CF07FF200DC8ED3;
+					};
+					4142D1972CF07FF400DC8ED3 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 4142D17D2CF07FF200DC8ED3;
+					};
+				};
+			};
+			buildConfigurationList = 4142D1792CF07FF200DC8ED3 /* Build configuration list for PBXProject "ImageCapture" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4142D1752CF07FF200DC8ED3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4142D17F2CF07FF200DC8ED3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4142D17D2CF07FF200DC8ED3 /* ImageCapture */,
+				4142D18D2CF07FF400DC8ED3 /* ImageCaptureTests */,
+				4142D1972CF07FF400DC8ED3 /* ImageCaptureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4142D17C2CF07FF200DC8ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AF2A92CF0F5DB00B007CE /* Preview Assets.xcassets in Resources */,
+				418AF2AA2CF0F5DB00B007CE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142D18C2CF07FF400DC8ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142D1962CF07FF400DC8ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE96BCBC861BAE69C3EAA45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCapture/Pods-ImageCapture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCapture/Pods-ImageCapture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageCapture/Pods-ImageCapture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A0BAB7C10FE4572BF4A1D2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageCaptureTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A23A059A37F5EFB12D47F4A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageCapture-ImageCaptureUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D618C4299918D6457C14F7FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCapture-ImageCaptureUITests/Pods-ImageCapture-ImageCaptureUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageCapture-ImageCaptureUITests/Pods-ImageCapture-ImageCaptureUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageCapture-ImageCaptureUITests/Pods-ImageCapture-ImageCaptureUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6BD3F5EA9C9944FB575C10C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageCapture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4142D17A2CF07FF200DC8ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AF29F2CF0F5DB00B007CE /* ImageModel.swift in Sources */,
+				418AF2A02CF0F5DB00B007CE /* ImageRealmObject.swift in Sources */,
+				418AF2A12CF0F5DB00B007CE /* ContentView.swift in Sources */,
+				418AF2A22CF0F5DB00B007CE /* ImageListData.swift in Sources */,
+				418AF2A32CF0F5DB00B007CE /* CombineViewModel.swift in Sources */,
+				418AF2A42CF0F5DB00B007CE /* ImageViewModel.swift in Sources */,
+				418AF2A52CF0F5DB00B007CE /* ImageHelper.swift in Sources */,
+				418AF2A62CF0F5DB00B007CE /* CombineDataService.swift in Sources */,
+				418AF2A72CF0F5DB00B007CE /* ImagePicker.swift in Sources */,
+				418AF2A82CF0F5DB00B007CE /* ImageCaptureApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142D18A2CF07FF400DC8ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4142D1942CF07FF400DC8ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4142D1902CF07FF400DC8ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4142D17D2CF07FF200DC8ED3 /* ImageCapture */;
+			targetProxy = 4142D18F2CF07FF400DC8ED3 /* PBXContainerItemProxy */;
+		};
+		4142D19A2CF07FF400DC8ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4142D17D2CF07FF200DC8ED3 /* ImageCapture */;
+			targetProxy = 4142D1992CF07FF400DC8ED3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4142D1A02CF07FF400DC8ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4142D1A12CF07FF400DC8ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4142D1A32CF07FF400DC8ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED093970DCD06684F9D575D /* Pods-ImageCapture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageCapture/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lalit.ImageCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4142D1A42CF07FF400DC8ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DA1E08B8750F1E77E977DAD /* Pods-ImageCapture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageCapture/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lalit.ImageCapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4142D1A62CF07FF400DC8ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 925A001F9E652661B5F70120 /* Pods-ImageCaptureTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lalit.ImageCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageCapture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageCapture";
+			};
+			name = Debug;
+		};
+		4142D1A72CF07FF400DC8ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D146FAE68994FAEFA7B91349 /* Pods-ImageCaptureTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lalit.ImageCaptureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageCapture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageCapture";
+			};
+			name = Release;
+		};
+		4142D1A92CF07FF400DC8ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC788BA3A36EB58150BFCF2 /* Pods-ImageCapture-ImageCaptureUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lalit.ImageCaptureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageCapture;
+			};
+			name = Debug;
+		};
+		4142D1AA2CF07FF400DC8ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803C1D2E97D40E938FAE5C9A /* Pods-ImageCapture-ImageCaptureUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Lalit.ImageCaptureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageCapture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4142D1792CF07FF200DC8ED3 /* Build configuration list for PBXProject "ImageCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4142D1A02CF07FF400DC8ED3 /* Debug */,
+				4142D1A12CF07FF400DC8ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4142D1A22CF07FF400DC8ED3 /* Build configuration list for PBXNativeTarget "ImageCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4142D1A32CF07FF400DC8ED3 /* Debug */,
+				4142D1A42CF07FF400DC8ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4142D1A52CF07FF400DC8ED3 /* Build configuration list for PBXNativeTarget "ImageCaptureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4142D1A62CF07FF400DC8ED3 /* Debug */,
+				4142D1A72CF07FF400DC8ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4142D1A82CF07FF400DC8ED3 /* Build configuration list for PBXNativeTarget "ImageCaptureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4142D1A92CF07FF400DC8ED3 /* Debug */,
+				4142D1AA2CF07FF400DC8ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4142D1762CF07FF200DC8ED3 /* Project object */;
+}
